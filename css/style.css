@@ -11,6 +11,7 @@ body {
 
 .navbar {
     background-color: #011936;
+    font-family: 'Poppins', sans-serif;
     color: white;
     width: 100%;
     padding: 18px 16px;
@@ -30,7 +31,7 @@ body {
     margin: 0;
 }
 
-.navbar ul {
+.navbar-menu {
     list-style: none;
     gap: 25px;
     display: flex;
@@ -61,11 +62,46 @@ body {
     transition: 0.3s ease;
 }
 
-
 .navbar ul li a:hover {
     color: #465362;
 }
 
 .navbar ul li a:hover::before {
     width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: #F4FFFD;
+    cursor: pointer;
+}
+
+@media (max-width: 1250px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar-menu {
+        overflow: hidden;
+        max-height: 0;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        background-color: #011936;
+        transition: max-height 0.4s ease;
+    }
+
+    .navbar-menu li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar-menu.show {
+        max-height: 600px;
+    }
 }
