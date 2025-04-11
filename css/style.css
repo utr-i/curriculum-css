@@ -79,7 +79,8 @@ body {
 
 @media (max-width: 1250px) {
     .navbar {
-        flex-wrap: wrap;
+        position: relative;
+        flex-wrap: nowrap;
     }
 
     .menu-toggle {
@@ -87,22 +88,26 @@ body {
     }
 
     .navbar-menu {
-        overflow: hidden;
-        max-height: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #011936;
         flex-direction: column;
         width: 100%;
-        margin-top: 10px;
-        background-color: #011936;
+        overflow: hidden;
+        max-height: 0;
         transition: max-height 0.4s ease;
+        z-index: 999;
     }
 
     .navbar-menu li {
         text-align: center;
-        padding: 10px 0;
+        padding: 12px 0;
     }
 
     .navbar-menu.show {
-        max-height: 600px;
+        max-height: 800px;
     }
 }
 
@@ -129,43 +134,43 @@ body {
 
 /* Footer */
 footer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
     background-color: #011936;
     color: #F4FFFD;
-    padding: 10px 10px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    padding: 20px 0;
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    flex-wrap: wrap; /* Por si en pantallas muy anchas no caben */
-    text-align: center; /* Centra el texto dentro de los enlaces */
+    text-align: center;
 }
 
 footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Activa flexbox para los elementos de la lista */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    gap: 20px; /* Espacio entre los elementos (ajusta este valor) */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 footer li {
-    margin: 0; /* Elimina márgenes individuales de los li */
+    display: inline;
 }
 
-footer li a {
-    text-decoration: none;
+footer a {
     color: #F4FFFD;
+    text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
-    padding: 5px 8px;
 }
 
-footer li a:hover {
+footer a:hover {
     color: #465362;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    footer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
