@@ -7,6 +7,8 @@
 body {
     background-color: #F4FFFD;
     font-family: Arial, sans-serif;
+    padding-top: 70px;
+    box-sizing: border-box;
 }
 
 /* Navbar */
@@ -20,7 +22,7 @@ body {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -49,7 +51,7 @@ body {
     font-size: 16px;
     color: #F4FFFD;
     transition: 0.3s ease;
-    padding: 8px 0; 
+    padding: 8px 0;
 }
 
 .navbar ul li a::before {
@@ -80,7 +82,7 @@ body {
 
 @media (max-width: 1250px) {
     .navbar {
-        position: relative;
+        position: fixed;
         flex-wrap: nowrap;
     }
 
@@ -114,22 +116,99 @@ body {
 
 /* Bienvenido a mi curriculum */
 .h1-index {
-    height: 100vh; 
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #F4FFFD;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .h1-index h1 {
     padding: 40px 60px;
     background-color: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 
-                0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.05);
     font-size: 36px;
     color: #011936;
     text-align: center;
+}
+
+/* Datos Personales */
+.info-card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    align-items: center;
+    max-width: 700px;
+    margin-top: 250px;
+}
+
+.texto-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.nombre h3, .edad h3, .nacimiento h3 {
+    color: #465362;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.3em;
+}
+
+.nombre p, .edad p, .nacimiento p {
+    color: #011936;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.personal-foto {
+    flex-shrink: 0;
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.personal-foto img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .info-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        margin: 200px 50px;
+    }
+
+    .texto-info {
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .nombre h3, .edad h3, .nacimiento h3 {
+        font-size: 1.1em;
+        margin-bottom: 3px;
+    }
+
+    .nombre p,
+    .edad p,
+    .nacimiento p {
+        font-size: 1em;
+        margin-bottom: 8px;
+    }
+
+    .personal-foto {
+        width: 100px;
+        margin: 0 auto 10px;
+    }
 }
 
 /* Footer */
@@ -139,6 +218,12 @@ footer {
     padding: 20px 0;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
 }
 
 footer ul {
@@ -153,6 +238,7 @@ footer ul {
 
 footer li {
     display: inline;
+    margin: 0;
 }
 
 footer a {
@@ -170,7 +256,11 @@ footer a:hover {
 @media (max-width: 600px) {
     footer ul {
         flex-direction: column;
+        align-items: center;
         gap: 10px;
     }
+    footer li {
+        display: block;
+        margin: 5px 0;
+    }
 }
-
