@@ -147,6 +147,7 @@ body {
     margin-top: 250px;
 }
 
+
 .texto-info {
     flex: 1;
     padding-right: 20px;
@@ -193,7 +194,9 @@ body {
         margin-bottom: 15px;
     }
 
-    .nombre h3, .edad h3, .nacimiento h3 {
+    .nombre h3,
+    .edad h3,
+    .nacimiento h3 {
         font-size: 1.1em;
         margin-bottom: 3px;
     }
@@ -208,6 +211,64 @@ body {
     .personal-foto {
         width: 100px;
         margin: 0 auto 10px;
+    }
+}
+
+/* Idiomas */
+.idiomas-container {
+    background-color: #011936; /* Un fondo claro para el contenedor principal */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Centra el contenedor en la página */
+    max-width: 500px; 
+    margin-top: 300px;/* Ancho máximo del contenedor */
+}
+
+.idiomas-lista {
+    display: flex; /* Para poner los idiomas uno al lado del otro */
+    gap: 20px; /* Espacio entre los bloques de idioma */
+    flex-wrap: wrap; /* Para que se apilen en pantallas pequeñas */
+    justify-content: center; /* Centra los bloques de idioma horizontalmente */
+}
+
+.idioma-item {
+    background-color: #fff; /* Fondo para cada bloque de idioma */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    text-align: center; /* Centra el texto dentro de cada bloque */
+    flex: 1; /* Hace que los bloques ocupen espacio igualitario */
+    min-width: 150px; /* Ancho mínimo para cada bloque */
+}
+
+.idioma-nombre {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.idioma-nivel {
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.9em;
+}
+
+@media (max-width: 500px) {
+    .idiomas-container{
+        margin-right: auto;
+        margin-left: auto;
+        width: 200px;
+    }
+    .idiomas-lista {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .idioma-item {
+        max-width: auto; 
     }
 }
 
