@@ -147,7 +147,6 @@ body {
     margin-top: 250px;
 }
 
-
 .texto-info {
     flex: 1;
     padding-right: 20px;
@@ -215,31 +214,32 @@ body {
 }
 
 /* Idiomas */
-.idiomas-container {
-    background-color: #011936; /* Un fondo claro para el contenedor principal */
+.idiomas-container, .contenedor {
+    background-color: #011936;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 20px auto; /* Centra el contenedor en la página */
+    margin: 20px auto; 
     max-width: 500px; 
-    margin-top: 300px;/* Ancho máximo del contenedor */
+    margin-top: 300px;
+    color: #fff;
 }
 
 .idiomas-lista {
-    display: flex; /* Para poner los idiomas uno al lado del otro */
-    gap: 20px; /* Espacio entre los bloques de idioma */
-    flex-wrap: wrap; /* Para que se apilen en pantallas pequeñas */
-    justify-content: center; /* Centra los bloques de idioma horizontalmente */
+    display: flex; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
 
 .idioma-item {
-    background-color: #fff; /* Fondo para cada bloque de idioma */
+    background-color: #fff; 
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    text-align: center; /* Centra el texto dentro de cada bloque */
-    flex: 1; /* Hace que los bloques ocupen espacio igualitario */
-    min-width: 150px; /* Ancho mínimo para cada bloque */
+    text-align: center; 
+    flex: 1; 
+    min-width: 150px;
 }
 
 .idioma-nombre {
@@ -271,6 +271,36 @@ body {
         max-width: auto; 
     }
 }
+
+/* Sobre MId*/
+.sobremi-header {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sobremi-text{
+    background-color: #F4FFFD;
+    color: #465362;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 16px;
+}
+
+@media (max-width: 500px) {
+    .contenedor{
+        margin: 200px auto;
+        width: 350px;
+    }
+    .sobremi-header {
+        padding: 5px;
+        font-weight: 900;
+    }
+}
+
 
 /* Footer */
 footer {
