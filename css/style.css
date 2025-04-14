@@ -273,7 +273,7 @@ body {
 }
 
 /* Sobre MId*/
-.sobremi-header {
+.header {
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -282,7 +282,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.sobremi-text{
+.text{
     background-color: #F4FFFD;
     color: #465362;
     border-radius: 10px;
@@ -295,7 +295,7 @@ body {
         margin: 200px auto;
         width: 350px;
     }
-    .sobremi-header {
+    .header {
         padding: 5px;
         font-weight: 900;
     }
