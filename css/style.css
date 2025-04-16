@@ -311,7 +311,7 @@ footer li a:hover {
     justify-content: space-around;
 }
 
-.estudio {
+.grid {
     background-color: #f4fffd;
     border: 1px solid #ccc;
     padding: 15px;
@@ -320,12 +320,12 @@ footer li a:hover {
     flex-grow: 1;
 }
 
-.estudio h3 {
+.grid h3 {
     margin-top: 0;
     margin-bottom: 5px;
 }
 
-.estudio p {
+.grid p {
     margin-top: 0;
 }
 
@@ -340,7 +340,7 @@ footer li a:hover {
         gap: 15px;
     }
 
-    .estudio {
+    .grid {
         width: 95%;
         flex-basis: auto;
         flex-grow: 0;
