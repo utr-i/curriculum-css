@@ -153,18 +153,14 @@ footer li a:hover {
     padding-right: 20px;
 }
 
-.nombre h3,
-.edad h3,
-.nacimiento h3 {
+.texto-info h3 {
     color: #465362;
     margin-top: 0;
     margin-bottom: 5px;
     font-size: 1.3em;
 }
 
-.nombre p,
-.edad p,
-.nacimiento p {
+.texto-info p{
     color: #011936;
     margin-top: 0;
     margin-bottom: 10px;
@@ -198,16 +194,12 @@ footer li a:hover {
         margin-bottom: 15px;
     }
 
-    .nombre h3,
-    .edad h3,
-    .nacimiento h3 {
+    .texto-info h3 {
         font-size: 1.1em;
         margin-bottom: 3px;
     }
 
-    .nombre p,
-    .edad p,
-    .nacimiento p {
+    .texto-info p {
         font-size: 1em;
         margin-bottom: 8px;
     }
@@ -280,43 +272,6 @@ footer li a:hover {
     transform: scale(1.05);
 }
 
-/* Dark Mode Support (automático según el sistema) */
-@media (prefers-color-scheme: dark) {
-    .grid-container {
-        background-color: #0b1e33;
-        color: #f4fffd;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    }
-
-    .grid-container ul li {
-        background-color: #011936;
-        border-color: #f4fffd;
-        color: #f4fffd;
-    }
-
-    .grid-container ul li:hover {
-        background-color: #f4fffd;
-        color: #011936;
-    }
-
-    .grid-container h2 {
-        color: #f4fffd;
-    }
-}
-
-/* Animación de entrada */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive extra */
 @media (max-width: 480px) {
     .grid-container {
         padding: 30px 20px;
