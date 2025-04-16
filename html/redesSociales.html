@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Redes Sociales</title>
 </head>
@@ -17,7 +18,7 @@
             </div>
 
             <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-            
+
             <ul class="navbar-menu" id="navbar-menu">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./datosPersonales.html">Datos Personales</a></li>
@@ -32,30 +33,44 @@
         </nav>
     </header>
 
-    <main>
-        <!-- Hacer grid -->
-        <div class="Instagram">
+    <main class="main-redes">
+      <div class="contenedor-redes">
+        <div class="red Instagram">
+          <i class="fab fa-instagram"></i>
+          <div>
             <h3>Instagram</h3>
             <a href="https://www.instagram.com/fran.elisondo/">fran.elisondo</a>
+          </div>
         </div>
 
-        <div class="Git">
+        <div class="red Git">
+          <i class="fab fa-github"></i>
+          <div>
             <h3>GitHub</h3>
             <a href="https://github.com/utr-i">utr-i</a>
+          </div>
         </div>
 
-        <div class="facebook">
+        <div class="red facebook">
+          <i class="fab fa-facebook"></i>
+          <div>
             <h3>Facebook</h3>
             <a href="https://www.facebook.com/people/Francisco-Elisondo/pfbid022bpm9Bg47Aa5uoMWEa8BwdTLCzsMkhsx2B8wDH7wHqTyxQ7VqRd2TwpeaDP2mTpbl/">francisco elisondo</a>
+          </div>
         </div>
+      </div>
     </main>
 
-    <footer>
-        <li><a href="./redesSociales.html">Redes Sociales</a></li>
-        <li><a href="./datosDeContacto.html">Datos de Contacto</a></li>
-        <li><a href="./experienciaProfesional.html">Experiencia Profesional</a></li>
 
-        <script src="../js/script.js"></script>
+
+    <footer>
+      <ul>
+        <li><a href="./redesSociales.html"><i class="fab fa-facebook-f"></i> Redes Sociales</a></li>
+        <li><a href="./datosDeContacto.html"><i class="fas fa-envelope"></i> Datos de Contacto</a></li>
+        <li><a href="./experienciaProfesional.html"><i class="fas fa-briefcase"></i> Experiencia Profesional</a></li>
+      </ul>
+
+      <script src="./js/script.js"></script>
     </footer>
 </body>
 </html>
