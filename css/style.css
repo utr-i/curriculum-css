@@ -408,7 +408,6 @@ footer li a:hover {
   gap: 1.5rem;
 }
 
-/* Cada red */
 .red {
   display: flex;
   align-items: center;
@@ -424,14 +423,12 @@ footer li a:hover {
   background-color: #03335f;
 }
 
-/* Iconos */
 .red i {
   font-size: 1.8rem;
   color: #f4fffd;
   width: 30px;
 }
 
-/* Texto */
 .red h3 {
   margin: 0;
   font-size: 1rem;
@@ -447,7 +444,6 @@ footer li a:hover {
   font-size: 0.95rem;
 }
 
-/* Responsive */
 @media (max-width: 480px) {
   .contenedor-redes {
     padding: 1.5rem;
