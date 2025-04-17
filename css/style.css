@@ -382,19 +382,6 @@ footer li a:hover {
   background-color: #f4fffd;
 }
 
-/* Animación fade + subida */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Redes */
 .contenedor-redes {
   width: 100%;
   max-width: 400px;
@@ -402,7 +389,6 @@ footer li a:hover {
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
-  animation: fadeUp 0.8s ease-in-out;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
