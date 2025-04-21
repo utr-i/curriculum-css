@@ -540,6 +540,13 @@ footer li a:hover {
     }
 }
 
+/* Cursos */
+.text a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #011936;
+}
+
 /* Footer */
 footer {
   background-color: #011936;
