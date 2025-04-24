@@ -7,9 +7,12 @@
 body {
     background-color: #f4fffd;
     font-family: Arial, sans-serif;
-    padding-top: 70px;
+    padding-top: 70px; /* Mantén el padding superior para el navbar fijo */
     box-sizing: border-box;
-}
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% del viewport */
+  }
 
 /* Navbar */
 .navbar {
@@ -107,7 +110,7 @@ footer li a:hover {
 
     .navbar-menu li {
         text-align: center;
-        padding: 12px 0;
+        padding: 4px 0;
     }
 
     .navbar-menu.show {
@@ -549,19 +552,16 @@ footer li a:hover {
 
 /* Footer */
 footer {
-  background-color: #011936;
-  color: #f4fffd;
-  padding: 25px 15px 20px;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  box-sizing: border-box;
-  z-index: 100;
-  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
-}
+    background-color: #011936;
+    color: #f4fffd;
+    padding: 25px 15px 20px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 100;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+    margin-top: auto; /* Empuja el footer hacia la parte inferior */
+  }
 
 footer ul {
   list-style: none;
@@ -569,7 +569,6 @@ footer ul {
   margin: 0 0 10px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 35px;
 }
 
@@ -597,6 +596,16 @@ footer i {
 }
 
 @media (max-width: 600px) {
+    body {
+        padding-bottom: 0; /* Opcional: si quitaste el footer fijo en móvil */
+    }
+
+    footer{
+    position: static; /* Cambia a comportamiento estático */
+    box-shadow: none; 
+    }
+
+
   footer ul {
     flex-direction: column;
     align-items: center;
