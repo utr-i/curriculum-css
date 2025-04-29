@@ -1,3 +1,9 @@
+:root {
+    --color1: #f4fffd;
+    --color2: #011936;
+    --color3: #465362;
+  }
+
 * {
     margin: 0px;
     padding: 0px;
@@ -5,18 +11,18 @@
 }
 
 body {
-    background-color: #f4fffd;
+    background-color: var(--color1);
     font-family: Arial, sans-serif;
-    padding-top: 70px; /* Mantén el padding superior para el navbar fijo */
+    padding-top: 70px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% del viewport */
+    min-height: 100vh;
   }
 
 /* Navbar */
 .navbar {
-    background-color: #011936;
+    background-color:var(--color2);
     font-family: "Poppins", sans-serif;
     color: white;
     width: 100%;
@@ -33,7 +39,7 @@ body {
 
 .navbar .navbar-logo h1 {
     font-size: 30px;
-    color: #f4fffd;
+    color: var(--color1);
     margin: 0;
 }
 
@@ -52,7 +58,7 @@ body {
 .navbar ul li a {
     text-decoration: none;
     font-size: 16px;
-    color: #f4fffd;
+    color: var(--color1);
     transition: 0.3s ease;
     padding: 8px 0;
 }
@@ -64,13 +70,13 @@ body {
     height: 2px;
     left: 0;
     bottom: 0;
-    background-color: #465362;
+    background-color: var(--color3);
     transition: 0.3s ease;
 }
 
 .navbar ul li a:hover,
 footer li a:hover {
-    color: #465362;
+    color: var(--color3);
 }
 
 .navbar ul li a:hover::before {
@@ -80,7 +86,7 @@ footer li a:hover {
 .menu-toggle {
     display: none;
     font-size: 28px;
-    color: #f4fffd;
+    color: var(--color1);
     cursor: pointer;
 }
 
@@ -99,7 +105,7 @@ footer li a:hover {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #011936;
+        background-color: var(--color2);
         flex-direction: column;
         width: 100%;
         overflow: hidden;
@@ -124,7 +130,7 @@ footer li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4fffd;
+    background-color: var(--color1);
     font-family: "Open Sans", sans-serif;
 }
 
@@ -134,7 +140,7 @@ footer li a:hover {
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.05);
     font-size: 36px;
-    color: #011936;
+    color: var(--color2);
     text-align: center;
 }
 
@@ -157,14 +163,14 @@ footer li a:hover {
 }
 
 .texto-info h3 {
-    color: #465362;
+    color: var(--color3);
     margin-top: 0;
     margin-bottom: 5px;
     font-size: 1.3em;
 }
 
 .texto-info p{
-    color: #011936;
+    color: var(--color2);
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 1.1em;
@@ -214,12 +220,12 @@ footer li a:hover {
 }
 /* Habilidades */
 .habilidades {
-    background-color: #f4fffd;
+    background-color: var(--color1);
     padding: 100px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f4fffd;
+    color: var(--color1);
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -236,7 +242,7 @@ footer li a:hover {
 .grid-container h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
-    color: #011936;
+    color: var(--color2);
     font-family: "Poppins", sans-serif;
 }
 
@@ -250,9 +256,9 @@ footer li a:hover {
 }
 
 .grid-container ul li {
-    background-color: #f4fffd;
-    border: 2px solid #011936;
-    color: #011936;
+    background-color: var(--color1);
+    border: 2px solid var(--color2);;
+    color: var(--color2);
     padding: 15px 20px;
     border-radius: 12px;
     font-size: 1.1em;
@@ -270,8 +276,8 @@ footer li a:hover {
 }
 
 .grid-container ul li:hover {
-    background-color: #011936;
-    color: #f4fffd;
+    background-color: var(--color2);
+    color: var(--color1);
     transform: scale(1.05);
 }
 
@@ -297,14 +303,14 @@ footer li a:hover {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #011936;
+    background-color: var(--color2);
     margin: 250px 50px;
     border-radius: 20px;
 }
 
 .titulo-principal {
     margin-bottom: 20px;
-    color: #f4fffd;
+    color: var(--color1);
 }
 
 .contenedor-estudios {
@@ -315,7 +321,7 @@ footer li a:hover {
 }
 
 .grid {
-    background-color: #f4fffd;
+    background-color: var(--color1);
     border: 1px solid #ccc;
     padding: 15px;
     text-align: center;
@@ -382,13 +388,13 @@ footer li a:hover {
   align-items: center;
   height: calc(100vh - 70px);
   padding: 0 20px;
-  background-color: #f4fffd;
+  background-color: var(--color1);
 }
 
 .contenedor-redes {
   width: 100%;
   max-width: 400px;
-  background-color: #011936;
+  background-color: var(--color2);
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
@@ -414,14 +420,14 @@ footer li a:hover {
 
 .red i {
   font-size: 1.8rem;
-  color: #f4fffd;
+  color: var(--color1);
   width: 30px;
 }
 
 .red h3 {
   margin: 0;
   font-size: 1rem;
-  color: #f4fffd;
+  color: var(--color1);
 }
 
 .red a {
@@ -454,7 +460,7 @@ footer li a:hover {
 /* Idiomas */
 .idiomas-container,
 .contenedor {
-    background-color: #011936;
+    background-color: var(--color2);
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -524,8 +530,8 @@ footer li a:hover {
 }
 
 .text {
-    background-color: #f4fffd;
-    color: #465362;
+    background-color: var(--color1);
+    color: var(--color3);
     border-radius: 10px;
     padding: 20px;
     font-size: 16px;
@@ -547,13 +553,13 @@ footer li a:hover {
 .text a {
     cursor: pointer;
     text-decoration: none;
-    color: #011936;
+    color: var(--color2);
 }
 
 /* Footer */
 footer {
-    background-color: #011936;
-    color: #f4fffd;
+    background-color: var(--color2);
+    color: var(--color1);
     padding: 25px 15px 20px;
     font-family: "Poppins", sans-serif;
     text-align: center;
@@ -577,7 +583,7 @@ footer li {
 }
 
 footer a {
-  color: #f4fffd;
+  color: var(--color1);
   text-decoration: none;
   font-size: 16px;
   display: inline-flex;
@@ -597,11 +603,11 @@ footer i {
 
 @media (max-width: 600px) {
     body {
-        padding-bottom: 0; /* Opcional: si quitaste el footer fijo en móvil */
+        padding-bottom: 0;
     }
 
     footer{
-    position: static; /* Cambia a comportamiento estático */
+    position: static;
     box-shadow: none; 
     }
 
